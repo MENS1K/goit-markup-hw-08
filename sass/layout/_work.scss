@@ -1,6 +1,15 @@
 .work {
-  display: flex;
+  padding-top: 0px;
+  // display: flex;
   padding-bottom: var(--padding-section);
+  display: none;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    display: block;
+  }
 }
 
 .work__title {
@@ -11,7 +20,7 @@
   padding-bottom: 50px;
 }
 .work__list {
-  display: flex;
+  // display: flex;
 }
 .work__item {
   position: relative;
@@ -30,12 +39,12 @@
   right: 0;
   width: 100%;
   height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   padding-top: 27px;
   padding-bottom: 27px;
 }
 .work__list .work__item + .work__item {
-  margin-left: 30px;
+  // margin-left: 30px;
 }

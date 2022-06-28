@@ -1,15 +1,30 @@
 .portfolio {
-  padding-bottom: var(--padding-section);
-  padding-top: var(--padding-section);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    padding-bottom: var(--padding-section);
+    padding-top: var(--padding-section);
+  }
 }
 .portfolio__btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // margin-bottom: 50px;
+  margin-bottom: 40px;
+  gap: 8px;
+  @include mobile {
+  }
+  @include tablet {
+    justify-content: center;
+  }
+  @include desktop {
+  }
 }
-.portfolio__btn-list .portfolio__btn-item + .portfolio__btn-item {
-  margin-left: 9px;
-}
+
 .btn {
   padding: 6px 22px;
   border-radius: 4px;
@@ -37,8 +52,15 @@
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
+  // margin-left: -30px;
+  // margin-bottom: -30px;
+  gap: var(--card-set-gap);
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+  }
 }
 
 .portfolio__top-container {
@@ -69,9 +91,9 @@
   border: 1px solid #eeeeee;
 }
 .portfolio__item {
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  width: 100%;
+  // margin-left: 30px;
+  // margin-bottom: 30px;
   transition: var(--typical-duration) var(--typical-timing-function);
   &:hover,
   &:focus {
@@ -80,6 +102,17 @@
   }
   &:hover .top-text {
     transform: translateY(0%);
+  }
+  @include mobile {
+    width: 450px;
+  }
+  @include tablet {
+    width: 354px;
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: 370px;
+    width: calc((100% - 30px) / 3);
   }
 }
 
