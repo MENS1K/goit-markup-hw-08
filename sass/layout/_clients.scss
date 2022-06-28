@@ -28,6 +28,7 @@
   @include tablet {
   }
   @include desktop {
+    flex-wrap: nowrap;
   }
 }
 .client__item {
@@ -42,6 +43,7 @@
     width: 226px;
   }
   @include desktop {
+    width: 170px;
   }
   // &:not(:last-child) {
   //   margin-right: 30px;

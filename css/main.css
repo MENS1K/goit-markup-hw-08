@@ -546,6 +546,12 @@ body {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .benefits__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .benefits__item {
   width: 100%;
@@ -608,6 +614,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 50px;
+}
+
+.work__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
 }
 
 .work__item {
@@ -724,6 +737,13 @@ body {
       flex-wrap: wrap;
   gap: var(--card-set-gap);
 }
+@media screen and (min-width: 1200px) {
+  .client__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .client__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -740,6 +760,12 @@ body {
     width: 226px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .client__item {
+    width: 170px;
+  }
+}
+
 .client__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -772,6 +798,9 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -790,7 +819,6 @@ body {
 @media screen and (min-width: 768px) {
   .container__address {
     margin-bottom: 60px;
-    margin-left: 76px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -930,6 +958,11 @@ body {
   color: var(--second-title-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer__form-title {
+    text-align: left;
+  }
+}
 
 .form__input {
   width: 100%;
@@ -1009,6 +1042,7 @@ body {
   .form__input {
     margin-right: 12px;
     width: 358px;
+    margin-bottom: 0;
   }
 }
 
@@ -1136,7 +1170,6 @@ body {
 .portfolio__wrap-container {
   padding-top: 20px;
   padding-left: var(--padding-portfolio);
-  padding-right: var(--padding-portfolio);
   padding-bottom: 17px;
   border: 1px solid #eeeeee;
 }
@@ -1154,21 +1187,14 @@ body {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-@media screen and (min-width: 480px) {
-  .portfolio__item {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 768px) {
   .portfolio__item {
-    width: 354px;
     width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__item {
-    width: 370px;
-    width: calc((100% - 30px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 

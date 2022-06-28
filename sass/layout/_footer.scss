@@ -4,6 +4,7 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   @include desktop {
     flex-wrap: nowrap;
@@ -19,10 +20,10 @@
   }
   @include tablet {
     margin-bottom: 60px;
-
   }
   @include desktop {
     margin-bottom: 0;
+  }
 }
 
 .footer__logo {
@@ -147,6 +148,13 @@
 
   color: var(--second-title-color);
   margin-bottom: 20px;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    text-align: left;
+  }
 }
 .form__input {
   width: 100%;

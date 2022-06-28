@@ -86,7 +86,7 @@
 .portfolio__wrap-container {
   padding-top: 20px;
   padding-left: var(--padding-portfolio);
-  padding-right: var(--padding-portfolio);
+  // padding-right: var(--padding-portfolio);
   padding-bottom: 17px;
   border: 1px solid #eeeeee;
 }
@@ -104,15 +104,12 @@
     transform: translateY(0%);
   }
   @include mobile {
-    width: 450px;
   }
   @include tablet {
-    width: 354px;
     width: calc((100% - 30px) / 2);
   }
   @include desktop {
-    width: 370px;
-    width: calc((100% - 30px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
