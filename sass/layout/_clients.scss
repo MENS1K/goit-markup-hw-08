@@ -11,17 +11,27 @@
   }
 }
 .client__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 
   color: #212121;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 .client__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: var(--card-set-gap);
   @include mobile {
   }

@@ -54,6 +54,14 @@
   text-transform: uppercase;
   color: var(--title-text-color);
   text-align: center;
+
+  @include mobile {
+  }
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+  }
 }
 .benefits__desc {
   font-size: 14px;

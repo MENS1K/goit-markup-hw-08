@@ -55,6 +55,53 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icon.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="mob__menu-container">
+          <div class="header__mob-menu-top">
+            <button type="button" class="menu-close-btn">
+              <svg class="menu__icon" width="40" height="40">
+                <use href="./images/icon.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="mob_nav">
+              <li class="list mob__item">
+                <a class="link mob__link current" href="./index.html">Студия</a>
+              </li>
+              <li class="list mob__item">
+                <a class="link mob__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="list mob__item">
+                <a class="link mob__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob_menu-bottom">
+            <ul class="list mob__info">
+              <li class="mob-info__item">
+                <a class="link mob-info__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-info__item">
+                <a class="link mob-info__link mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob__soc-list">
+              <li class="list mob__soc-item">
+                <a href="" class="mob__soc-link link">Instagram</a>
+              </li>
+              <li class="list mob__soc-item"><a href="" class="mob__soc-link link">Twitter</a></li>
+              <li class="list mob__soc-item"><a href="" class="mob__soc-link link">Facebook</a></li>
+              <li class="list mob__soc-item"><a href="" class="mob__soc-link link">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -156,7 +203,22 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img src="./images/Igor.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="./images/Igor.jpg 1x, ./images/Igor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/Igor-tab.jpg 1x, ./images/tablet/Igor-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mob/Igor-mob.jpg 1x, ./images/mob/Igor-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/Igor.jpg" alt="Игорь Демьяненко" />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__caption">Игорь Демьяненко</h3>
                 <p class="team__desc" lang="en">Product Designer</p>
@@ -189,7 +251,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Olga.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="./images/Olga.jpg 1x, ./images/Olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/Olga-tab.jpg 1x, ./images/tablet/Olga-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mob/Olga-mob.jpg 1x, ./images/mob/Olga-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/Olga.jpg" alt="Ольга Репина" />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__caption">Ольга Репина</h3>
                 <p class="team__desc" lang="en">Frontend Developer</p>
@@ -222,7 +299,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Nikolai.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="./images/Nikolai.jpg 1x, ./images/Nikolai-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/Nikolai-tab.jpg 1x, ./images/tablet/Nikolai-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mob/Nikolai-mob.jpg 1x, ./images/mob/Nikolai-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/Nikolai.jpg" alt="Николай Тарасов" />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__caption">Николай Тарасов</h3>
                 <p class="team__desc" lang="en">Marketing</p>
@@ -255,7 +347,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/Misha.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="./images/Misha.jpg 1x, ./images/Misha-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/tablet/Misha-tab.jpg 1x, ./images/tablet/Misha-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mob/Misha-mob.jpg 1x, ./images/mob/Misha-mob-2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/Misha.jpg" alt="Михаил Ермаков" />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__caption">Михаил Ермаков</h3>
                 <p class="team__desc" lang="en">UI Designer</p>
@@ -490,6 +597,7 @@
         </form>
       </div>
     </div>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   @include desktop {
     flex-wrap: nowrap;
@@ -15,6 +15,10 @@
   padding-bottom: 60px;
   text-align: center;
 }
+.address__list .footer__item + .footer__item {
+  margin-top: 9px;
+}
+
 .container__address {
   @include mobile {
   }
@@ -30,11 +34,26 @@
   display: block;
   margin-bottom: 20px;
   text-align: center;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    text-align: left;
+  }
 }
 .footer__logo-desc {
   color: var(--second-title-color);
 }
-
+.address__list {
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    text-align: left;
+  }
+}
 .address__link {
   font-style: normal;
   font-weight: 400;
@@ -90,6 +109,13 @@
 
   color: #ffffff;
   margin-bottom: 20px;
+  @include mobile {
+  }
+  @include tablet {
+  }
+  @include desktop {
+    text-align: left;
+  }
 }
 .footer__soc {
   display: flex;
