@@ -19,9 +19,11 @@
   @include mobile {
   }
   @include tablet {
+    margin-bottom: 30px;
     justify-content: center;
   }
   @include desktop {
+    margin-bottom: 50px;
   }
 }
 
@@ -55,6 +57,7 @@
   // margin-left: -30px;
   // margin-bottom: -30px;
   gap: var(--card-set-gap);
+
   @include mobile {
   }
   @include tablet {
@@ -86,15 +89,16 @@
 .portfolio__wrap-container {
   padding-top: 20px;
   padding-left: var(--padding-portfolio);
-  // padding-right: var(--padding-portfolio);
   padding-bottom: 17px;
-  border: 1px solid #eeeeee;
+  padding-right: var(--padding-portfolio);
 }
+
 .portfolio__item {
   width: 100%;
   // margin-left: 30px;
   // margin-bottom: 30px;
   transition: var(--typical-duration) var(--typical-timing-function);
+  border: 1px solid #eeeeee;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
