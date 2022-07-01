@@ -271,7 +271,7 @@
 }
 .mob-soc-link {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 
@@ -279,6 +279,13 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @include mobile {
+    font-size: 18px;
+  }
+  @include tablet {
+  }
+  @include desktop {
   }
 }
 
